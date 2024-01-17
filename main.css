@@ -19,4 +19,446 @@ input, textarea, button, select {
 
 body {
   min-height: 100vh;
+  width: 1440px;
+  font-family: Mulish;
+  margin: 0 auto;
+}
+
+main {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+span {
+  color: #FF5400;
+}
+
+button {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FF5400;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h2 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h4 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 52px 0;
+  align-items: center;
+}
+header .left-side {
+  display: flex;
+  justify-content: space-between;
+}
+header .left-side h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+header .right-side ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 44px;
+}
+header .right-side ul li .home {
+  color: #FF5400;
+}
+header .right-side ul li a {
+  text-decoration: none;
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+section {
+  width: 1170px;
+  margin-bottom: 100px;
+}
+
+section.Explore {
+  background: url("Images/Group 13 (1) (1).png");
+  width: 1170px;
+  height: 500px;
+  flex-shrink: 0;
+}
+section.Explore div {
+  display: block;
+  text-align: center;
+  padding-top: 106px;
+}
+section.Explore div h1 {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+section.Explore div p {
+  color: #FFF;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 100px;
+}
+section.Explore div form input {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FFF;
+  border: none;
+  color: rgba(19, 19, 24, 0.5);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 24px;
+}
+
+section.Our-popular-tours {
+  display: flex;
+  height: 550px;
+}
+section.Our-popular-tours .left-side {
+  width: 1440px;
+  text-align: left;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+section.Our-popular-tours .left-side h2 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+section.Our-popular-tours .left-side p {
+  margin: 24px auto;
+}
+section.Our-popular-tours .left-side ul {
+  margin-left: 20px;
+}
+section.Our-popular-tours .right-side img {
+  width: 540px;
+  height: 550px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+section.destination {
+  width: 1170px;
+}
+section.destination div.description {
+  width: 643px;
+  text-align: center;
+  margin: 0 auto;
+}
+section.destination div.description h2 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+section.destination div.description P {
+  margin-bottom: 48px;
+}
+section.destination div.pictures div.first-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+section.destination div.pictures div.second-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+section.destination div.pictures div.third-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+section.why-us div.description {
+  width: 643px;
+  margin: 0 auto;
+  text-align: center;
+}
+section.why-us div.cards div.first-row {
+  display: flex;
+  gap: 24px;
+}
+section.why-us div.cards div.first-row div.hotels {
+  width: 573px;
+  height: 284px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  text-align: left;
+  padding-top: 5%;
+}
+section.why-us div.cards div.first-row div.hotels p {
+  margin-top: 20px;
+}
+section.why-us div.cards div.first-row div.service {
+  width: 573px;
+  height: 284px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  padding-top: 5%;
+}
+section.why-us div.cards div.first-row div.service p {
+  margin-top: 20px;
+}
+section.why-us div.cards div.second-row div.price {
+  margin: 24px auto;
+  width: 573px;
+  height: 284px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  padding-top: 5%;
+}
+section.why-us div.cards div.second-row div.price p {
+  margin-top: 20px;
+}
+
+section.deal-discount div.description {
+  margin-bottom: 46px;
+}
+section.deal-discount div.deal {
+  position: relative;
+  margin-bottom: 24px;
+}
+section.deal-discount div.deal div.details {
+  width: 579px;
+  height: 389px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  text-align: center;
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  padding: 35px 24px;
+}
+section.deal-discount div.deal div.details p, section.deal-discount div.deal div.details h5 {
+  margin: 24px;
+}
+section.deal-discount button.see-all {
+  margin: 24px 500px;
+}
+
+section.perfect-place {
+  display: flex;
+  gap: 26px;
+}
+section.perfect-place div.left-side h2 {
+  width: 448px;
+  text-align: left;
+  margin: 24px 0;
+}
+section.perfect-place div.left-side p {
+  width: 532px;
+  text-align: left;
+  margin: 24px 0;
+}
+section.perfect-place div.left-side ul li {
+  margin: 24px 0;
+  color: #131318;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+
+section.newsletter {
+  display: flex;
+  gap: 24px;
+}
+section.newsletter div.input {
+  width: 474px;
+  height: 422px;
+  flex-shrink: 0;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+}
+section.newsletter div.input p {
+  width: 350px;
+  text-align: left;
+  margin: 24px 0;
+}
+section.newsletter div.input form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section.newsletter div.input form input {
+  width: 393px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  text-align: left;
+  border: none;
+  padding-left: 12px;
+}
+section.newsletter div.input button.subscribe {
+  border-radius: 8px;
+  background: #FF5400;
+  width: 393px;
+  height: 52px;
+  flex-shrink: 0;
+  margin: 16px 0;
+}
+section.newsletter div.right-side {
+  position: relative;
+}
+section.newsletter div.right-side button.travel {
+  position: absolute;
+  z-index: 233px;
+  bottom: 48px;
+  right: 10px;
+  transform: rotate(-19.628deg);
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.newsletter div.right-side button.travel span {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+footer {
+  width: 1440px;
+  height: 502px;
+  flex-shrink: 0;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 100px;
+}
+footer div.all {
+  width: 769px;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+footer div.all div.description {
+  margin: 0 auto;
+}
+footer div.all div.description div.logo {
+  display: flex;
+  text-align: center;
+  margin-left: 280px;
+  margin-bottom: 40px;
+}
+footer div.all div.description div.logo h3 {
+  text-align: center;
+  margin-left: 20px;
+  color: var(--Dark-01, #131318);
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+footer div.all div.icons {
+  display: flex;
+  gap: 26px;
+  margin-left: 200px;
+  margin-top: 16px;
+}
+footer div.all div.copyright {
+  text-align: center;
+  margin: 16px;
 }/*# sourceMappingURL=main.css.map */
