@@ -95,6 +95,14 @@ header{
   margin: 52px 0;
   align-items: center;
 
+  .mobile{
+    display:none ;
+    img{
+      display: hidden;
+    }
+    
+  }
+
   .left-side{
     display: flex;
     justify-content: space-between;
@@ -149,6 +157,7 @@ section.Explore{
   width: 1170px;
   height: 500px;
   flex-shrink: 0;
+  border-radius:16px ;
   div{
     display: block;
     text-align: center;
@@ -195,17 +204,19 @@ section.Explore{
 
 section.Our-popular-tours{
   display: flex;
+  justify-content: space-between;
   height: 550px;
 
   .left-side{
-    width: 1440px;
+    width: 577px;
     text-align: left;
     color: rgba(19, 19, 24, 0.70);
     font-family: Mulish;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 26px; 
+    margin-right: 24px;
     h2{
       color: #131318;
       font-family: Mulish;
@@ -213,9 +224,11 @@ section.Our-popular-tours{
       font-style: normal;
       font-weight: 800;
       line-height: normal;
+      text-align: left;
     }
     p{
       margin: 24px auto;
+      text-align: left;
     }
     ul{
       margin-left: 20px;
@@ -526,3 +539,390 @@ section.newsletter{
         }
     }
   }
+
+
+  @media screen and (max-width: 600px){
+  
+    body{
+      width: 375px;
+      margin:  0 auto;
+    }
+
+    main{
+      width: 335px;
+      margin: 0 auto;
+    }
+
+    p{
+      color: rgba(19, 19, 24, 0.70);
+      text-align: center;
+      font-family: Mulish;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px; 
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      color: rgba(19, 19, 24, 0.70);
+      font-family: Mulish;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+
+    section{
+      margin: 0 auto 24px;
+      width: 335px;
+    }
+
+    header{
+      .left-side{
+        h3{
+          color: #131318;
+          font-family: Mulish;
+          font-size: 21.543px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          margin-left: 1.2px;
+        }
+        img{
+          width: 28.724px;
+          height: 33.516px;
+          flex-shrink: 0;
+        }
+      }
+      .right-side{
+        display:none ;
+      }
+
+      .mobile{
+        display: block;
+      }
+    }
+
+    section.Explore{
+      width: 335px;
+      height: 483px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      div{
+        margin: 0;
+        padding-top: 32px;
+        text-align: center;
+        
+        h1{
+          color: black;
+          font-family: Mulish;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        P{
+          color: #131318;
+          margin-bottom: 0;
+        }
+        form{
+          display: flex;
+          width: 287px;
+          padding: 16px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px; 
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 0.30);
+          margin: 32px auto;
+
+          input{
+            width: 255px;
+            height: 52px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FFF;
+          }
+          
+          button{
+            width: 255px;
+            height: 52px;
+            flex-shrink: 0;    
+            border-radius: 8px;
+            background: #FF5400;       
+          }
+        }
+      }
+
+
+    }
+    
+    section.Our-popular-tours{
+      display: block;
+      text-align: left;
+      
+      div.left-side{
+        margin-bottom: 24px;
+        width: 335px;
+        h2{
+          color: #131318;
+          text-align: left;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        p{
+          text-align: left;
+          color: rgba(19, 19, 24, 0.70);
+          font-family: Mulish;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 171.429% */
+          color: rgba(19, 19, 24, 0.70);
+        }
+      }
+    }
+
+    section.destination{
+      width: 335px;
+      margin-top: 450px;
+      div.description{
+        width: 335px;
+        text-align: center;
+
+        h2{
+          color: #131318;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+        p{
+          width: 309px;
+          margin: 0 au;
+        }
+      }
+
+      div.pictures {
+        .first-row, .second-row, .third-row{
+          display: flex;
+          flex-direction: column;
+
+          img{
+            width: 335px;
+height: 176px;
+flex-shrink: 0;
+          }
+        }
+      }
+    }
+
+    section.why-us{
+      width: 335px;
+
+      div.description{
+        width: 335px;
+        margin-bottom: 24px;
+        margin-top: 50px;
+
+        h2{
+          color: #131318;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;          
+        }
+        p{
+          width: 309px;
+          text-align: center;
+        }
+      }
+
+      div.cards{
+        div.first-row{
+
+        }
+
+        div.first-row, div.second-row{
+          display: flex;
+          flex-direction: column;
+          div.hotels, div.service, div.price{
+            width: 335px;
+            height: 289px;
+            flex-shrink: 0;
+            text-align: center;
+            padding-top: 25%;
+          }
+        }
+      }
+    }
+
+    section.deal-discount{
+      margin-bottom: 0;
+      div.description{
+        width: 309px;
+        margin: 0 auto 24px;
+
+        h2{
+          color: #131318;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+      }
+
+      div.deal{
+        position: relative;
+        img{
+          width: 335px;
+          height: 500px;
+          flex-shrink: 0;
+        }
+        div.details{
+          width: 303px;
+          height: 360px;
+          flex-shrink: 0;
+          position: absolute;
+          top: 120px;
+          left: 16px;
+        }
+      }
+      button.see-all{
+        margin: 10px 0 30px 80px;
+      }
+    }
+
+    section.perfect-place{
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      div.left-side{
+        width: 335px;
+
+        h2{
+          width: 248px;
+          color: #131318;
+          font-family: Mulish;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 30px;    
+          margin: 0;   
+        }
+        p{
+          width: 335px;
+        }
+        ul{
+          padding-left: 24px;
+        }
+      }
+    }
+
+    section.newsletter{
+      display: flex;
+      flex-direction: column;
+      div.input{
+        width: 335px;
+
+        p{
+          width: 270px;
+        }
+        form input{
+          width: 270px;
+        }
+        button.subscribe{
+          width: 270px;
+          height: 52px;
+          flex-shrink: 0;
+        }
+      }
+      div.right-side{
+        img{
+          width: 335px;
+          height: 300px;
+          flex-shrink: 0;
+        }
+        button.travel{
+          width: 214.023px;
+          height: 79.268px;
+          transform: rotate(-19.628deg);
+          flex-shrink: 0;
+          font-size: 15.854px;
+          position: absolute;
+          bottom: 32px;
+          span{
+            font-size: 21.138px;
+          }
+        }
+      }
+    }
+
+    footer{
+      width: 375px;
+      height: 309px;
+      flex-shrink: 0;    
+      position: relative;
+
+      
+      div.all{
+        width: 287px;
+        margin: 0 auto;
+        padding: 0;
+        
+        div.description{
+          text-align: center;
+          padding-top: 50px;
+          padding-bottom: 20px;
+          div.logo{
+            width: 100px;
+            margin: 0px auto;
+            
+            h3{
+              color: #131318;
+              font-family: Mulish;
+              font-size: 21.543px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: normal;
+              margin-left: 1.2px;
+              
+            }
+            img{
+              width: 50px;
+              
+              flex-shrink: 0;
+            }
+          }
+        }
+
+        div.icon-div{
+          text-align: center;
+          div.icons{
+            text-align: center;
+            display: flex;
+            gap: 24px;
+            width: 287px;
+            margin-left: 70px;
+
+            img{
+              width: 24px;
+              text-align: center;
+            }
+          }
+        }
+
+
+    }
+  }
+}

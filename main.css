@@ -94,6 +94,12 @@ header {
   margin: 52px 0;
   align-items: center;
 }
+header .mobile {
+  display: none;
+}
+header .mobile img {
+  display: hidden;
+}
 header .left-side {
   display: flex;
   justify-content: space-between;
@@ -136,6 +142,7 @@ section.Explore {
   width: 1170px;
   height: 500px;
   flex-shrink: 0;
+  border-radius: 16px;
 }
 section.Explore div {
   display: block;
@@ -180,17 +187,19 @@ section.Explore div form input {
 
 section.Our-popular-tours {
   display: flex;
+  justify-content: space-between;
   height: 550px;
 }
 section.Our-popular-tours .left-side {
-  width: 1440px;
+  width: 577px;
   text-align: left;
   color: rgba(19, 19, 24, 0.7);
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  margin-right: 24px;
 }
 section.Our-popular-tours .left-side h2 {
   color: #131318;
@@ -199,9 +208,11 @@ section.Our-popular-tours .left-side h2 {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  text-align: left;
 }
 section.Our-popular-tours .left-side p {
   margin: 24px auto;
+  text-align: left;
 }
 section.Our-popular-tours .left-side ul {
   margin-left: 20px;
@@ -461,4 +472,336 @@ footer div.all div.icons {
 footer div.all div.copyright {
   text-align: center;
   margin: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 375px;
+    margin: 0 auto;
+  }
+  main {
+    width: 335px;
+    margin: 0 auto;
+  }
+  p {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    color: rgba(19, 19, 24, 0.7);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  section {
+    margin: 0 auto 24px;
+    width: 335px;
+  }
+  header .left-side h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 21.543px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 1.2px;
+  }
+  header .left-side img {
+    width: 28.724px;
+    height: 33.516px;
+    flex-shrink: 0;
+  }
+  header .right-side {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+  }
+  section.Explore {
+    width: 335px;
+    height: 483px;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+  section.Explore div {
+    margin: 0;
+    padding-top: 32px;
+    text-align: center;
+  }
+  section.Explore div h1 {
+    color: black;
+    font-family: Mulish;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  section.Explore div P {
+    color: #131318;
+    margin-bottom: 0;
+  }
+  section.Explore div form {
+    display: flex;
+    width: 287px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 32px auto;
+  }
+  section.Explore div form input {
+    width: 255px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+  }
+  section.Explore div form button {
+    width: 255px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF5400;
+  }
+  section.Our-popular-tours {
+    display: block;
+    text-align: left;
+  }
+  section.Our-popular-tours div.left-side {
+    margin-bottom: 24px;
+    width: 335px;
+  }
+  section.Our-popular-tours div.left-side h2 {
+    color: #131318;
+    text-align: left;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  section.Our-popular-tours div.left-side p {
+    text-align: left;
+    color: rgba(19, 19, 24, 0.7);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    color: rgba(19, 19, 24, 0.7);
+  }
+  section.destination {
+    width: 335px;
+    margin-top: 450px;
+  }
+  section.destination div.description {
+    width: 335px;
+    text-align: center;
+  }
+  section.destination div.description h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  section.destination div.description p {
+    width: 309px;
+    margin: 0 au;
+  }
+  section.destination div.pictures .first-row, section.destination div.pictures .second-row, section.destination div.pictures .third-row {
+    display: flex;
+    flex-direction: column;
+  }
+  section.destination div.pictures .first-row img, section.destination div.pictures .second-row img, section.destination div.pictures .third-row img {
+    width: 335px;
+    height: 176px;
+    flex-shrink: 0;
+  }
+  section.why-us {
+    width: 335px;
+  }
+  section.why-us div.description {
+    width: 335px;
+    margin-bottom: 24px;
+    margin-top: 50px;
+  }
+  section.why-us div.description h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  section.why-us div.description p {
+    width: 309px;
+    text-align: center;
+  }
+  section.why-us div.cards div.first-row, section.why-us div.cards div.second-row {
+    display: flex;
+    flex-direction: column;
+  }
+  section.why-us div.cards div.first-row div.hotels, section.why-us div.cards div.first-row div.service, section.why-us div.cards div.first-row div.price, section.why-us div.cards div.second-row div.hotels, section.why-us div.cards div.second-row div.service, section.why-us div.cards div.second-row div.price {
+    width: 335px;
+    height: 289px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 25%;
+  }
+  section.deal-discount {
+    margin-bottom: 0;
+  }
+  section.deal-discount div.description {
+    width: 309px;
+    margin: 0 auto 24px;
+  }
+  section.deal-discount div.description h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  section.deal-discount div.deal {
+    position: relative;
+  }
+  section.deal-discount div.deal img {
+    width: 335px;
+    height: 500px;
+    flex-shrink: 0;
+  }
+  section.deal-discount div.deal div.details {
+    width: 303px;
+    height: 360px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 120px;
+    left: 16px;
+  }
+  section.deal-discount button.see-all {
+    margin: 10px 0 30px 80px;
+  }
+  section.perfect-place {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  section.perfect-place div.left-side {
+    width: 335px;
+  }
+  section.perfect-place div.left-side h2 {
+    width: 248px;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    margin: 0;
+  }
+  section.perfect-place div.left-side p {
+    width: 335px;
+  }
+  section.perfect-place div.left-side ul {
+    padding-left: 24px;
+  }
+  section.newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  section.newsletter div.input {
+    width: 335px;
+  }
+  section.newsletter div.input p {
+    width: 270px;
+  }
+  section.newsletter div.input form input {
+    width: 270px;
+  }
+  section.newsletter div.input button.subscribe {
+    width: 270px;
+    height: 52px;
+    flex-shrink: 0;
+  }
+  section.newsletter div.right-side img {
+    width: 335px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+  section.newsletter div.right-side button.travel {
+    width: 214.023px;
+    height: 79.268px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    font-size: 15.854px;
+    position: absolute;
+    bottom: 32px;
+  }
+  section.newsletter div.right-side button.travel span {
+    font-size: 21.138px;
+  }
+  footer {
+    width: 375px;
+    height: 309px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  footer div.all {
+    width: 287px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  footer div.all div.description {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  footer div.all div.description div.logo {
+    width: 100px;
+    margin: 0px auto;
+  }
+  footer div.all div.description div.logo h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 21.543px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 1.2px;
+  }
+  footer div.all div.description div.logo img {
+    width: 50px;
+    flex-shrink: 0;
+  }
+  footer div.all div.icon-div {
+    text-align: center;
+  }
+  footer div.all div.icon-div div.icons {
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    width: 287px;
+    margin-left: 70px;
+  }
+  footer div.all div.icon-div div.icons img {
+    width: 24px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
